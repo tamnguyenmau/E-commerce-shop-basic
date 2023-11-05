@@ -1,0 +1,87 @@
+﻿@model List<Gallery>
+<!-- Start: Content -->
+<div id="content">
+    <div class="container mt-gallery">
+        <div class="title-project pb-4">
+            <h2>GALLERY</h2>
+            <h3>Cùng SiliconZ điểm qua các góc làm việc cực đỉnh trên toàn Thế Giới</h3>
+            <div class="wrap-title-project">
+                <span>
+                    Đừng quên chia sẻ góc làm việc của bạn bằng hashtag #siliconzworkspace tại <br />
+                    instagram https://www.instagram.com/siliconz.vn/ nhé
+                </span>
+                <span>
+                    <a href="#">
+                        <img src="assets/img/z-icon/soc.png" alt="" />
+                        FOLLOW US
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="bb"></div>
+    <div div class="container pt-5">
+        <!-- gallery pc -->
+        <div class="gallery hide" id="hide-mobile">
+            <!-- first floor -->
+
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-4 pb-4 box">
+                        <div class="zoom-hover">
+                            <a data-fancybox="gallery" data-src="@item.Avatar">
+                                <img src="@item.Avatar" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            
+        </div>
+        <!-- gallery tablet -->
+        <div class="gallery show" id="hide-mobile">
+            <!-- first floor -->
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-6 pb-4 box">
+                        <div class="zoom-hover">
+                            <a data-fancybox="gallery" data-src="@item.Avatar">
+                                <img src="@item.Avatar" alt="" />
+                            </a>
+                        </div>
+                    </div>
+
+                }
+
+            </div>
+
+            
+        </div>
+        <!-- mobile -->
+        <div class="gallery show" id="show-mobile">
+            <div class="row justify-content-center ">
+                @foreach (var item in Model)
+                {
+                    <div class="col-11">
+                        <div class="box pb-4">
+                            <div class="zoom-hover">
+                                <a data-fancybox="gallery" data-src="@item.Avatar">
+                                    <img src="@item.Avatar" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="bb"></div>
+    @await Component.InvokeAsync("Interested")
+</div>
+<!-- End: Content -->

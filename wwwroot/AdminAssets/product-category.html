@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thể loại sản phẩm</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/fontawesome.pro.6.0.0/fontawesome.pro.6.0.0.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="bg-gradient-primary">
+            <ul class="list-unstyled pt-1 components">
+                <li class="active">
+                    <a href="index.html">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Bàn Làm Việc</span>
+                    </a>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-account-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa fa-users"></i>
+                        <span>Quản Lý Tài Khoản</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-account-menu">
+                        <li>
+                            <a href="account-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span>Thể Loại Tài Khoản</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="account-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span>Danh Sách Tài Khoản</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-article-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa-sharp fa-regular fa-newspaper"></i>
+                        <span>Quản Lý Tin Tức</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-article-menu">
+                        <li>
+                            <a href="article-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span>Thể Loại Tin Tức</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="article-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span>Danh Sách Tin Tức</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-picture-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa-duotone fa-image"></i>
+                        <span>Quản Lý Hình Ảnh</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-picture-menu">
+                        <li>
+                            <a href="picture-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span>Thể Loại Hình Ảnh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="picture-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span>Danh Sách Hình Ảnh</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-video-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa-duotone fa-photo-film"></i>
+                        <span> Quản Lý Video</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-video-menu">
+                        <li>
+                            <a href="video-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span> Thể Loại Video</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="video-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span> Danh Sách Video</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-product-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa fa-laptop"></i>
+                        <span>Quản Lý Sản Phẩm</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-product-menu">
+                        <li>
+                            <a href="product-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span>Thể Loại Sản Phẩm</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="product-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span>Danh Sách Sản Phẩm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="border-bottom">
+                    <a href="#sub-contact-menu" data-toggle="collapse" class="dropdown-toggle">
+                        <i class="fa fa-envelope"></i>
+                        <span>Quản Lý Liên Hệ</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="sub-contact-menu">
+                        <li>
+                            <a href="contact-category.html">
+                                <i class="fa-regular fa-list-tree"></i>
+                                <span>Thể Loại Liên Hệ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact-list.html">
+                                <i class="fa-sharp fa-solid fa-list-ol"></i>
+                                <span>Danh Sách Liên Hệ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav id="top-navbar" class="navbar shadow navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <div class="name-operating">
+                        <a href="index.html">
+                            ADMIN
+                        </a>
+                    </div>
+
+                    <div class="float-right">
+                        <div class="sidebar-header">
+                            <div class="content d-flex">
+
+                                <div class="notification d-flex align-items-center">
+                                    <!-- bell -->
+                                    <div class="btn-group mr-4">
+                                        <a href="#" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-bell text-secondary"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right"
+                                            aria-labelledby="dropdownMenuClickable">
+                                            <h7 class="dropdown-header">
+                                                Alerts center
+                                            </h7>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-primary icon-circle mr-3">
+                                                        <i class="fa-solid fa-file-lines"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="time-alert text-secondary">
+                                                            05/10/2023
+                                                        </div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-success icon-circle mr-3">
+                                                        <i class="fa-sharp fa-solid fa-circle-dollar-to-slot"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="time-alert text-secondary">
+                                                            05/10/2023
+                                                        </div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-warning icon-circle mr-3">
+                                                        <i class="fa-regular fa-triangle-exclamation"></i>
+                                                    </div>
+                                                    <div>
+                                                        <div class="time-alert text-secondary">
+                                                            05/10/2023
+                                                        </div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex justify-content-center py-0" href="#">
+                                                    Xem tất cả thông báo
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- message -->
+                                    <div class="btn-group">
+                                        <a href="#" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="fa-solid fa-envelope text-secondary"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right"
+                                            aria-labelledby="dropdownMenuClickable">
+                                            <h7 class="dropdown-header">
+                                                Message center
+                                            </h7>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-primary icon-circle mr-3">
+                                                        <img src="/Content/images/undraw_profile_2.svg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                        <div class="time-alert text-secondary d-flex">
+                                                            <div class="user-alert mr-2">Admin-A.</div>
+                                                            <span>02m</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-success icon-circle mr-3">
+                                                        <img src="/Content/images/undraw_profile_2.svg" alt="">
+
+                                                    </div>
+                                                    <div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                        <div class="time-alert text-secondary d-flex">
+                                                            <div class="user-alert mr-2">Admin-A.</div>
+                                                            <span>02m</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex" href="#">
+                                                    <div class="bg-gradient-warning icon-circle mr-3">
+                                                        <img src="/Content/images/undraw_profile_2.svg" alt="">
+
+                                                    </div>
+                                                    <div>
+                                                        <p class="title-notification">Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit.</p>
+                                                        <div class="time-alert text-secondary d-flex">
+                                                            <div class="user-alert mr-2">Admin-A.</div>
+                                                            <span>02d</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex justify-content-center py-0" href="#">
+                                                    Xem tất cả tin nhắn
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <div class="info px-3 d-flex align-items-center border-left"
+                                        id="dropdownMenuClickable" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a href="#">
+                                            Nguyễn Mậu Tâm
+                                        </a>
+                                        <div class="avatar">
+                                            <img class="rounded-circle mx-2" src="Content/images/undraw_profile.svg" />
+                                        </div>
+                                    </div>
+                                    <ul class="dropdown-menu dropdown-menu-right"
+                                        aria-labelledby="dropdownMenuClickable">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa-solid fa-user pr-1"></i>
+                                                <span>Cá nhân</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <i class="fa-duotone fa-gear pr-1"></i>
+                                                <span>Cài đặt</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item border-bottom" href="#">
+                                                <i class="fa-duotone fa-list pr-1"></i>
+                                                <span>Activity log</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                                <i class="fa-sharp fa-solid pr-1 fa-right-from-bracket"></i>
+                                                <span>Đăng xuất</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Đăng xuất  ?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Chọn "Đăng xuất" bên dưới nếu bạn sẵn sàng kết thúc phiên hiện tại của mình.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Huỷ</button>
+                                <a class="btn btn-primary" href="login.html">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <!-- Thanh điều hướng -->
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Bàn Làm Việc</a></li>
+                        <li class="breadcrumb-item"><a href="#">Thể Loại Tài Khoản</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tài Khoản</li>
+                    </ol>
+                </nav>
+                <!-- Nội dung chính -->
+                <section class="category-page">
+                    <div class="row">
+                        <div class="col-lg-3 col-12 left">
+                            <header>
+                                <i class="fa fa-folder icon"></i>
+                                <h4>Danh Sách Thể Loại</h4>
+                                <div class="clearfix"></div>
+                            </header>
+                            <content>
+                                <select size="20" class="form-control select-category-main">
+                                    <option value="value">text</option>
+                                </select>
+                            </content>
+                        </div>
+                        <div class="col-lg-9 col-12 right">
+                            <header>
+                                <i class="fa fa-folder icon"></i>
+                                <h4>Danh Sách Thể Loại</h4>
+                                <a class="btn delete-btn" href="#">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                                <a class="btn add-btn" href="#">
+                                    <i class="fa fa-plus-circle"></i>
+                                </a>
+                                <div class="clearfix"></div>
+                            </header>
+                            <content>
+                                <div class="accordion" id="accordion-main">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    Thông tin cơ bản
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse show" data-parent="#accordion-main">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-2">
+                                                        Mã số:
+                                                    </div>
+                                                    <div class="col-12 col-lg-2">
+                                                        <input type="text" class="form-control form-control-sm" />
+                                                    </div>
+                                                    <div class="col-12 col-lg-1">
+                                                        Vị trí:
+                                                    </div>
+                                                    <div class="col-12 col-lg-1">
+                                                        <input type="text" class="form-control form-control-sm" />
+                                                    </div>
+                                                    <div class="col-12 col-lg-1">
+                                                        Code:
+                                                    </div>
+                                                    <div class="col-12 col-lg-1">
+                                                        <input type="text" class="form-control form-control-sm" />
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <small class="font-italic">(Vị trí và code được phép để trống)</small>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-2">
+                                                        Tiêu đề:
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <input type="text" class="form-control form-control-sm" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-2">
+                                                        Mô tả:
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <textarea class="form-control form-control-sm"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row avatar-container">
+                                                    <div class="col-12 col-lg-2">
+                                                        Hình đại diện:
+                                                    </div>
+                                                    <div class="col-12 col-lg-3">
+                                                        <div class="avatar-box">
+                                                            <a class="close" href="#">
+                                                                <i class="fa fa-times-circle"></i>
+                                                            </a>
+                                                            <img class="img-fluid img-preview" src="Content/images/avatar.png" />
+                                                            <input type="file" class="img-upload form-control form-control-sm" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-7 avatar-link">
+                                                        <div class="input-group input-group-sm link-box">
+                                                            <input type="text" class="form-control">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button">&times;</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                                    <i class="fa fa-caret-right"></i>
+                                                    Nội dung chi tiết
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div id="collapseTwo" class="collapse" data-parent="#accordion-main">
+                                            <div class="card-body p-0">
+                                                <textarea class="form-control editor"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </content>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                Copyright &copy; 2022 Admin Control Panel
+            </footer>
+        </div>
+    </div>
+
+    <section id="script">
+        <script src="Scripts/bootstrap.bundle.js"></script>
+        <script src="Scripts/jquery-3.0.0.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <script src="Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="Scripts/jquery.nicescroll.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="Scripts/owl.carousel.js"></script>
+        <script src="Scripts/script.js"></script>
+    </section>
+</body>
+
+</html>

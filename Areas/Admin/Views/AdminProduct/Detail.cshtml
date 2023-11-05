@@ -1,0 +1,148 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+@model Product
+
+<!-- Thanh điều hướng -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-route="AdminHome"> Bàn Làm Việc</a></li>
+        <li class="breadcrumb-item"><a asp-route="AdminProduct">Sản phẩm</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Chi Tiết sản phẩm</li>
+    </ol>
+</nav>
+<!-- Nội dung chính -->
+<section class="category-page">
+    <div class="row">
+        <div class="col-12 right">
+            <header>
+                <i class="fa fa-folder icon"></i>
+                <h4>Danh Sách sản phẩm</h4>
+                <a class="btn delete-btn" href="#">
+                    <i class="fa fa-trash"></i>
+                </a>
+                <a class="btn add-btn" href="#">
+                    <i class="fa fa-plus-circle"></i>
+                </a>
+                <div class="clearfix"></div>
+            </header>
+            <content>
+                <div class="accordion" id="accordion-main">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    <i class="fa fa-caret-right"></i>
+                                    Thông tin cơ bản
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion-main">
+                            <div class="card-body">
+                                <form asp-route="AdminProductDetail"
+                                      asp-route-id="@Model.ProductId"
+                                      method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Thể loại:
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <select class="form-control form-control-sm" asp-for="@Model.ProductCategoryId">
+                                                <option value="">.: Chọn thể loại :.</option>
+                                                @foreach (ProductCategory item in ViewBag.ProductCategory)
+                                                {
+                                                    <option value="@item.ProductCategoryId">@item.Title</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Mã số:
+                                        </div>
+                                        <div class="col-12 col-lg-2">
+                                            <input asp-for="@Model.ProductId" readonly type="text" class="form-control form-control-sm" />
+                                        </div>
+                                        <div class="col-12 col-lg-1">
+                                            Vị trí:
+                                        </div>
+                                        <div class="col-12 col-lg-1">
+                                            <input asp-for="@Model.Position" type="text" class="form-control form-control-sm" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Số lượng:
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Tiêu đề:
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <input asp-for="@Model.Title" type="text" class="form-control form-control-sm" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Mô tả:
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <textarea asp-for="@Model.Decs" class="form-control form-control-sm"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="row avatar-container">
+                                        <div class="col-12 col-lg-2">
+                                            Hình đại diện:
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <div class="avatar-container">
+                                                <div class="avatar-box">
+                                                    <a class="close" href="#">
+                                                        <i class="fa fa-times-circle"></i>
+                                                    </a>
+                                                    <a data-fancybox="gallery" href="@Model.Avatar">
+                                                        <img class="img-fluid img-preview" src="@Model.Avatar" />
+                                                    </a>
+                                                    <input asp-for="@Model.Avatar" type="text" class="img-data form-control form-control-sm" />
+                                                    <input type="file" class="img-upload form-control form-control-sm" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            Nội dung:
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <textarea asp-for="@Model.Content" class="editor"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                            <a class="btn btn-primary" onclick="$(this).closest('form').submit()">
+                                                <i class="fa fa-save"></i>
+                                                Lưu
+                                            </a>
+                                        </div>
+                                        <div class="col-12 col-lg-10">
+                                            <div class="alert @ViewBag.MessageClass  alert-info alert-dismissible fade show" role="alert">
+                                                <span class="message">@ViewBag.MessageText</span>
+                                                <button type="button" class="close" data-dismiss="alert">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </content>
+        </div>
+    </div>
+</section>

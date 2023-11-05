@@ -1,0 +1,341 @@
+﻿
+<div id="content">
+    <!-- Carousel -->
+    <div class="owl-carousel owl-theme mt-mobile" id="owl-product">
+        @await Component.InvokeAsync("Slider")
+    </div>
+    <div class="play-video">
+        <a class="loop-circle" href="#">
+            <i class="fa-solid fa-play"></i>
+        </a>
+    </div>
+
+    @await Component.InvokeAsync("TrendProduct")
+    <!-- carousel project pc -->
+
+    <div class="container">
+        <!-- discovery pc -->
+        @await Component.InvokeAsync("TrendNews")
+        @await Component.InvokeAsync("Gallery")
+        <!-- store -->
+        <div class="siliconz-store">
+            <div class="title-project pb-3"
+                 data-aos="fade-up"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="700"
+                 data-aos-once="true"
+                 data-aos-delay="50">
+                <h1>SiliconZ Store</h1>
+            </div>
+            <!-- store pc -->
+            <div class="row hide" id="hide-mobile">
+                <!-- left -->
+                <div class="col-6" data-aos="fade-right"
+                     data-aos-duration="700"
+                     data-aos-easing="ease-in-out"
+                     data-aos-once="true"
+                     data-aos-delay="200">
+                    <div class="half-left">
+                        <div class="zoom-hover">
+                            <a href="" class="img-product"></a>
+                            <div class="decs">
+                                <h3>Epione ErgoChair Pro</h3>
+                                <p class="price">8,590,000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="col-6">
+                    <!-- first floor -->
+                    <div class="row pb-4"
+                         data-aos="zoom-in"
+                         data-aos-duration="400"
+                         data-aos-easing="ease-in-out"
+                         data-aos-once="true"
+                         data-aos-delay="400">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-1"></a>
+                                    <div class="decs">
+                                        <h3>Epione Easy Chair - All Black</h3>
+                                        <p class="price">5,090,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-2"></a>
+                                    <div class="decs">
+                                        <h3>Epione Easy Chair - Cool Gray</h3>
+                                        <p class="price">5,490,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second floor -->
+                    <div class="row pb-4"
+                         data-aos="zoom-in"
+                         data-aos-duration="400"
+                         data-aos-easing="ease-in-out"
+                         data-aos-once="true"
+                         data-aos-delay="400">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-3"></a>
+                                    <div class="decs">
+                                        <h3>Epione SmartDesk Pro</h3>
+                                        <p class="price">8,890,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-4"></a>
+                                    <div class="decs">
+                                        <h3>Epione Liftup Pro</h3>
+                                        <p class="price">1,390,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third floor -->
+                    <div class="row"
+                         data-aos="zoom-in"
+                         data-aos-duration="400"
+                         data-aos-easing="ease-in-out"
+                         data-aos-once="true"
+                         data-aos-delay="400">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-5"></a>
+                                    <div class="decs">
+                                        <h3>Keychron K6</h3>
+                                        <p class="price">1,490,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-6"></a>
+                                    <div class="decs">
+                                        <h3>Keychron K8</h3>
+                                        <p class="price">1,590,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- store tablet -->
+            <div class="row show pb-3" id="hide-mobile">
+                <!-- center-->
+                <div class="col-12">
+                    <div class="half-left">
+                        <div class="zoom-hover">
+                            <a href="" class="img-product"></a>
+                            <div class="decs">
+                                <h3>Epione ErgoChair Pro</h3>
+                                <p class="price">8,590,000 VNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row show" id="hide-mobile">
+                <div class="col-12">
+                    <!-- first floor -->
+                    <div class="row pb-4">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-1"></a>
+                                    <div class="decs">
+                                        <h3>Epione Easy Chair - All Black</h3>
+                                        <p class="price">5,090,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-2"></a>
+                                    <div class="decs">
+                                        <h3>Epione Easy Chair - Cool Gray</h3>
+                                        <p class="price">5,490,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second floor -->
+                    <div class="row pb-4">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-3"></a>
+                                    <div class="decs">
+                                        <h3>Epione SmartDesk Pro</h3>
+                                        <p class="price">8,890,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-4"></a>
+                                    <div class="decs">
+                                        <h3>Epione Liftup Pro</h3>
+                                        <p class="price">1,390,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third floor -->
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-5"></a>
+                                    <div class="decs">
+                                        <h3>Keychron K6</h3>
+                                        <p class="price">1,490,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="quarter-right">
+                                <div class="zoom-hover">
+                                    <a href="" class="img-product-6"></a>
+                                    <div class="decs">
+                                        <h3>Keychron K8</h3>
+                                        <p class="price">1,590,000 VNĐ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- store mobile -->
+            <div id="show-mobile">
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product"></a>
+                        <div class="decs">
+                            <h3>Epione ErgoChair Pro</h3>
+                            <p class="price">8,590,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-1"></a>
+                        <div class="decs">
+                            <h3>Epione Easy Chair - All Black</h3>
+                            <p class="price">5,090,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-2"></a>
+                        <div class="decs">
+                            <h3>Epione Easy Chair - Cool Gray</h3>
+                            <p class="price">5,490,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-3"></a>
+                        <div class="decs">
+                            <h3>Epione SmartDesk Pro</h3>
+                            <p class="price">8,890,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-4"></a>
+                        <div class="decs">
+                            <h3>Epione Liftup Pro</h3>
+                            <p class="price">1,390,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-5"></a>
+                        <div class="decs">
+                            <h3>Keychron K6</h3>
+                            <p class="price">1,490,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="half-left pb-4">
+                    <div class="zoom-hover">
+                        <a href="" class="img-product-6"></a>
+                        <div class="decs">
+                            <h3>Keychron K8</h3>
+                            <p class="price">1,590,000 VNĐ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- discovery mobile -->
+    <!-- contact -->
+    <div class="contact">
+        <div class="wrap-sub">
+            <h1 data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="50">
+                SUBSCRIBE
+            </h1>
+            <p data-aos="fade-up"
+               data-aos-offset="300"
+               data-aos-easing="ease-in-out"
+               data-aos-duration="1000"
+               data-aos-delay="150"
+               data-aos-once="true">
+                Đăng Ký ngay để nhận được những tin tức / ưu đãi mới nhất về các
+                sản phẩm từ SiliconZ
+            </p>
+            <form action="">
+                <div class="frm-con"
+                     data-aos="fade-up"
+                     data-aos-offset="200"
+                     data-aos-easing="ease-in-out"
+                     data-aos-duration="1000"
+                     data-aos-delay="200"
+                     data-aos-once="true">
+                    <input type="email" placeholder="Nhập email của bạn!" required id="" />
+                    <button>SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End: Content -->

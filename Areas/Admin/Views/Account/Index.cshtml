@@ -1,0 +1,38 @@
+﻿
+@model List<Account>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h1>Quản lý tài khoản</h1>
+
+<!-- Thanh điều hướng -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a asp-route="AdminHome">Bàn Làm Việc</a>
+        </li>
+
+        <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
+    </ol>
+</nav>
+
+@foreach (var item in Model)
+{
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@item.Avatar" class="img-fluid rounded-start border-right" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Họ tên: @item.FullName</h5>
+                    <p class="card-text">Tên đăng nhập: @item.Username</p>
+                    <p class="card-text">Thể loại tài khoản: @item.AccountCategoryId</p>
+                </div>
+            </div>
+        </div>
+    </div>
+}

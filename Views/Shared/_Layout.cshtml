@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiliconZ - Nền tảng giới thiệu sản phẩm công nghệ</title>
+    <link rel="icon" type="image/x-icon" href="~/assets/img/z-icon/favicon.ico.png" />
+    <link rel="stylesheet" href="~/assets/css/style.css" />
+    <link rel="stylesheet" href="~/assets/css/responsive.css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/assets/fontawesome.pro.6.0.0/fontawesome.pro.6.0.0.css" />
+    <link rel="stylesheet" href="~/assets/css/fancybox.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="~/assets/css/hamburgers.css">
+    <link rel="stylesheet" href="~/assets/css/pretty-checkbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="main">
+
+        @*@await Component.InvokeAsync(nameof(vcMenu))*@
+        <vc:vc-menu model="null"></vc:vc-menu>
+        <!-- Start: Content -->
+        <div id="content">
+            @RenderBody()
+
+            <!-- Start: Footer -->
+            <div id="footer">
+                <div class="container">
+                    <!-- footer pc -->
+                    <div class="row main-footer pb-2 hide">
+                        <div class="col-3 about-siliconz">
+                            <ul>
+                                <li class="logo-footer">
+                                    <img src="~/assets/img/footer/logo.svg" alt="" />
+                                </li>
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="project.html">Dự án</a>
+                                </li>
+                                <li>
+                                    <a href="#">SiliconZ Store</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tuyển dụng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đại lý</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ hợp tác</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate</a>
+                                </li>
+                                <li>
+                                    <a href="#">Co-Branding</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 policy">
+                            <ul>
+                                <li class="title-foot">
+                                    <h3>Chính sách</h3>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Pre-Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Bảo Mật</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Bảo Hành</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Vận Chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Tiên Phong</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 certification">
+                            <ul>
+                                <li class="title-foot">
+                                    <h3>chứng nhận</h3>
+                                </li>
+                                <li>
+                                    <a href="http://online.gov.vn/searchProfile/Index?KeySearch=0316012611&btnRadioSearch=opt-mst&AspxAutoDetectCookieSupport=1">
+                                        <img src="~/assets/img/footer/logoSaleNoti.png" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.dmca.com/Protection/Status.aspx?ID=9c242908-9ac3-4325-a6e3-5dc3e48533b3&refurl=https://siliconz.vn/">
+                                        <img src="~/assets/img/footer/DMCA.png" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://veri.siliconz.vn/">
+                                        <img src="~/assets/img/footer/PRODUCE.png" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 social">
+                            <ul>
+                                <li class="title-foot">
+                                    <h3>Mạng xã hội</h3>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Công ty cổ phần SiliconZ</b>
+                                    <span>
+                                        Hotline: 1900 633 037 | MST: <br />
+                                        0316012611 <br />
+                                        Showroom: 72 Ngô Bệ, Phường 13, <br />
+                                        Quận Tân Bình, Hồ Chí Minh.
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer mobile -->
+                    <div class="row main-footer pb-2 show-flex">
+                        <div class="col-6 about-siliconz">
+                            <ul>
+                                <li class="logo-footer">
+                                    <img src="~/assets/img/footer/logo.svg" alt="" />
+                                </li>
+                                <li>
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="#">Dự án</a>
+                                </li>
+                                <li>
+                                    <a href="#">SiliconZ Store</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tuyển dụng</a>
+                                </li>
+                                <li>
+                                    <a href="#">Đại lý</a>
+                                </li>
+                                <li>
+                                    <a href="#">Liên hệ hợp tác</a>
+                                </li>
+                                <li>
+                                    <a href="#">Affiliate</a>
+                                </li>
+                                <li>
+                                    <a href="#">Co-Branding</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6 policy">
+                            <ul>
+                                <li class="title-foot">
+                                    <h3>Chính sách</h3>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Pre-Order</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Bảo Mật</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Bảo Hành</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Vận Chuyển</a>
+                                </li>
+                                <li>
+                                    <a href="#">Chính sách Tiên Phong</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 certification">
+                                <ul>
+                                    <li class="title-foot">
+                                        <h3>chứng nhận</h3>
+                                    </li>
+                                    <li>
+                                        <a href="http://online.gov.vn/searchProfile/Index?KeySearch=0316012611&btnRadioSearch=opt-mst&AspxAutoDetectCookieSupport=1">
+                                            <img src="assets/img/footer/logoSaleNoti.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.dmca.com/Protection/Status.aspx?ID=9c242908-9ac3-4325-a6e3-5dc3e48533b3&refurl=https://siliconz.vn/">
+                                            <img src="assets/img/footer/DMCA.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://veri.siliconz.vn/">
+                                            <img src="assets/img/footer/PRODUCE.png" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 social">
+                                <ul>
+                                    <li class="title-foot">
+                                        <h3>Mạng xã hội</h3>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <i class="fa-brands fa-telegram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <b>Công ty cổ phần SiliconZ</b> <br>
+                                        <span>
+                                            Hotline: 1900 633 037 | MST: <br />
+                                            0316012611 <br />
+                                            Showroom: 72 Ngô Bệ, Phường 13, <br />
+                                            Quận Tân Bình, Hồ Chí Minh.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>Copyright © 2020 SiliconZ Inc. - All rights reserved.</span>
+                </div>
+            </div>
+            <!-- End: Footer -->
+            <div class="move-on-top">
+                <div class="move-on-top__container">
+                    <a href="#"><i class="fas fa-arrow-up move-on-top-btn"></i></a>
+                </div>
+            </div>
+        </div>
+        <script src="~/assets/js/jquery-3.6.4.js"></script>
+        <script src="~/assets/js/paginathing.min.js"></script>
+        <script src="~/assets/js/owl.carousel.js"></script>
+        <script src="~/assets/js/main.js"></script>
+        <script src="~/assets/js/fancybox.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

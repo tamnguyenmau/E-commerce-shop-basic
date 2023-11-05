@@ -1,0 +1,17 @@
+﻿@model List<Product>
+
+
+    @foreach (var item in Model)
+{
+    <div class="colt">
+        <div class="item product-slider" data-fancybox="product" data-src="@item.Avatar">
+            <img src="@item.Avatar" alt="" />
+            <div class="title-product cold">
+                <h1>@item.Title</h1>
+                <p>@item.Decs</p>
+                <a href="/product-view=@item.ProductId" class="hide">xem chi tiết</a>
+            </div>
+        </div>
+    </div>
+}
+

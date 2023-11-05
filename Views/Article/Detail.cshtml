@@ -1,0 +1,194 @@
+﻿@model Article
+<div id="content">
+            <div class="container mt-gallery pb-5">
+                <div class="title-project pb-3 px-3">
+                    <h2>VỀ DỰ ÁN</h2>
+                    <br>
+                    <h2 class="w-100">@Model.Title</h2>
+                    <div class="grdateshare">
+                        <div class="date">
+				        @Model.CreateBy
+                        </div>
+                        <a href="#" class="share mt-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bb"></div>
+            <div class="container pt-5">
+                <!-- pc -->
+                <div class="row hide" id="hide-mobile">
+                    <div class="col-66">
+                        <div class="gripdetail">
+                            <div class="vhdetailinfo">
+                                <a href="#" class="bg-light-gray">@Model.DetailInfo</a>
+                                <div class="the-content">
+                                        @Html.Raw(Model.Content)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="lst-item-preorder">
+                            <div class="wrap">
+                                <div class="zoom-hover">
+                                  <a href="" class="item-1-project"></a>
+                                </div>
+                                <div class="status pre-order">pre-order</div>
+                                <div class="desc-item">
+                                  <div class="date-project">
+                                    <span class="num">3</span>
+                                    <span class="txt">ngày</span>
+                                  </div>
+                                  <h3>Keychron Q0 Plus - Bàn phím số Custom QMK</h3>
+                                  <p>
+                                    Nhôm nguyên khối CNC | Hot-Swap | Núm điều chỉnh đa
+                                    năng | Tuỳ biến với QMK/VIA
+                                  </p>
+                                  <span class="link-project">XEM CHI TIẾT</span>
+                                </div>
+                              </div>
+                              <div class="wrap">
+                                <div class="zoom-hover">
+                                  <a href="" class="item-2-project"></a>
+                                </div>
+                                <div class="status pre-order">pre-order</div>
+                                <div class="desc-item">
+                                  <div class="date-project">
+                                    <span class="num">13</span>
+                                    <span class="txt">ngày</span>
+                                  </div>
+                                  <h3>
+                                    Keychron Q1 Pro - Bàn phím cơ custom không dây
+                                    QMK/VIA
+                                  </h3>
+                                  <p>
+                                    Wireless | Nhôm nguyên khối CNC | Hot-Swap | Kết nối
+                                    đến 3 thiết bị | Tương thích Mac, Windows, Linux |
+                                    QMK/VIA
+                                  </p>
+                                  <span class="link-project">XEM CHI TIẾT</span>
+                                </div>
+                              </div>
+                              <div class="wrap">
+                                <div class="zoom-hover">
+                                  <a href="" class="item-10-project"></a>
+                                </div>
+                                <div class="status pre-order">pre-order</div>
+                                <div class="desc-item">
+                                  <div class="date-project">
+                                    <span class="num">27</span>
+                                    <span class="txt">ngày</span>
+                                  </div>
+                                  <h3>
+                                    Ghế công thái học Epione FolioChair
+                                  </h3>
+                                  <p>
+                                    Ghế công thái học có mức giá tốt nhất
+                                  </p>
+                                  <span class="link-project">XEM CHI TIẾT</span>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tablet -->
+                <div class="row show" id="hide-mobile">
+                    <div class="d-flex">
+                        <div class="col-7">
+                            <div class="gripdetail">
+                                <div class="vhdetailinfo">
+                                    <a href="#" class="bg-light-gray">@Model.DetailInfo</a>
+                                    <div class="the-content">
+                                        @Html.Raw(Model.Content)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="lst-item-preorder">
+                                <div class="wrap">
+                                    <div class="zoom-hover">
+                                      <a href="" class="item-1-project"></a>
+                                    </div>
+                                    <div class="status pre-order">pre-order</div>
+                                    <div class="desc-item">
+                                      <div class="date-project">
+                                        <span class="num">3</span>
+                                        <span class="txt">ngày</span>
+                                      </div>
+                                      <h3>Keychron Q0 Plus - Bàn phím số Custom QMK</h3>
+                                      <p>
+                                        Nhôm nguyên khối CNC | Hot-Swap | Núm điều chỉnh đa
+                                        năng | Tuỳ biến với QMK/VIA
+                                      </p>
+                                      <span class="link-project">XEM CHI TIẾT</span>
+                                    </div>
+                                  </div>
+                                  <div class="wrap">
+                                    <div class="zoom-hover">
+                                      <a href="" class="item-2-project"></a>
+                                    </div>
+                                    <div class="status pre-order">pre-order</div>
+                                    <div class="desc-item">
+                                      <div class="date-project">
+                                        <span class="num">13</span>
+                                        <span class="txt">ngày</span>
+                                      </div>
+                                      <h3>
+                                        Keychron Q1 Pro - Bàn phím cơ custom không dây
+                                        QMK/VIA
+                                      </h3>
+                                      <p>
+                                        Wireless | Nhôm nguyên khối CNC | Hot-Swap | Kết nối
+                                        đến 3 thiết bị | Tương thích Mac, Windows, Linux |
+                                        QMK/VIA
+                                      </p>
+                                      <span class="link-project">XEM CHI TIẾT</span>
+                                    </div>
+                                  </div>
+                                  <div class="wrap">
+                                    <div class="zoom-hover">
+                                      <a href="" class="item-10-project"></a>
+                                    </div>
+                                    <div class="status pre-order">pre-order</div>
+                                    <div class="desc-item">
+                                      <div class="date-project">
+                                        <span class="num">27</span>
+                                        <span class="txt">ngày</span>
+                                      </div>
+                                      <h3>
+                                        Ghế công thái học Epione FolioChair
+                                      </h3>
+                                      <p>
+                                        Ghế công thái học có mức giá tốt nhất
+                                      </p>
+                                      <span class="link-project">XEM CHI TIẾT</span>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile -->
+                <div class="row hide" id="show-mobile">
+                    <div class="col-12">
+                        <div class="gripdetail">
+                            <div class="vhdetailinfo">
+                                <a href="#" class="bg-light-gray">@Model.DetailInfo</a>
+                                <div class="the-content">
+                                    @Html.Raw(Model.Content)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bb"></div>
+    @await Component.InvokeAsync("Interested")
+            <!-- End: Content -->
+            <!-- Start: Footer -->
+           
+            <!-- End: Footer -->
+        </div>

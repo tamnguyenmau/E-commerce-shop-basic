@@ -1,0 +1,115 @@
+﻿@model List<Product>
+
+<div class="container pt-5">
+    <div class="title-product-other">
+        <h1>có thể bạn quan tâm</h1>
+    </div>
+    <!-- carousel pc -->
+    <div class="project backgr-white hide" id="hide-mobile">
+        <div class="row">
+            <div class="col-12 item-project px-0">
+                <div id="owl-project-interested" class="owl-carousel owl-theme">
+                    @foreach(var item in Model)
+                    {                       
+                    <div class="item pe-2">
+                        <!-- stage 1 -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wrap">
+                                    <div class="zoom-hover">
+                                            <img src="@item.Avatar" class="item-project" alt="" />
+                                            
+                                    </div>
+                                    <div class="status @item.Condition">@item.Condition</div>
+                                    <div class="desc-item">
+                                        <div class="date-project">
+                                            <span class="num">@item.DayProject</span>
+                                            <span class="txt">ngày</span>
+                                        </div>
+                                        <h3>@item.Title</h3>
+                                        <p>
+                                            @item.Decs
+                                        </p>
+                                            <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    } 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  carousel project tablet-->
+    <div class="project backgr-white show" id="hide-mobile">
+        <div class="row">
+            <div class="col-12 item-project px-0">
+                <div id="owl-project-tablet" class="owl-carousel owl-theme">
+                    @foreach(var item in Model)
+                    {
+                        
+                    <div class="item pe-2">
+                        <!-- stage 1 -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="wrap">
+                                    <div class="zoom-hover">
+                                            <img src="@item.Avatar" class="item-project" alt="" />
+                                            
+                                    </div>
+                                    <div class="status @item.Condition">@item.Condition</div>
+                                    <div class="desc-item">
+                                        <div class="date-project">
+                                            <span class="num">@item.DayProject</span>
+                                            <span class="txt">ngày</span>
+                                        </div>
+                                        <h3>@item.Title</h3>
+                                        <p>
+                                            @item.Decs
+                                        </p>
+                                            <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel project mobile -->
+    <div class="project show-mobile hide backgr-white" id="show-mobile">
+        <div class="item-project">
+            <div id="owl-project-mobile" class="owl-carousel owl-theme">
+                @foreach(var item in Model)
+                {                   
+                <div class="item">
+                    <!-- stage 1 -->
+                    <div class="wrap">
+                        <div class="zoom-hover">
+                                <img src="@item.Avatar" class="item-project" alt="" />
+                                
+                        </div>
+                        <div class="status @item.Condition">@item.Condition</div>
+                        <div class="desc-item">
+                            <div class="date-project">
+                                <span class="num">@item.DayProject</span>
+                                <span class="txt">ngày</span>
+                            </div>
+                            <h3>@item.Title</h3>
+                            <p>
+                                @item.Decs
+                            </p>
+                                <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

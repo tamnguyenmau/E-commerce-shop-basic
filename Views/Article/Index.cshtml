@@ -1,0 +1,64 @@
+﻿
+@model List<Article>
+<!-- Start: Content -->
+<div id="content">
+    <div class="container mt-gallery">
+        <!-- discovery pc -->
+        <div class="discovery" id="hide-mobile">
+            <div class="title-project pb-3">
+                <h2>KHÁM PHÁ</h2>
+            </div>
+            <div class="row pb-4 pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-4 pb-4">
+                        <div class="wrap">
+                            <div class="thumb">
+                                <i class="fa-regular fa-angle-right"></i>
+                            </div>
+                            <img src="@item.Avatar" class="img-article" alt="" />
+                            <a href="/article-view/@item.ArticleId" class="@item.Avatar">
+                                <div class="discovery-desc">
+                                    <p>@item.Title</p>
+                                    <div>
+                                        @item.Decs
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+ 
+        </div>
+        <!-- discovery mobile -->
+        <div class="discovery" id="show-mobile">
+            <div class="title-project pb-3">
+                <h2>KHÁM PHÁ</h2>
+            </div>
+            <div class="pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="wrap mb-4">
+                        <div class="thumb">
+                            <i class="fa-regular fa-angle-right"></i>
+                        </div>
+                        <a href="/discovery-view/@item.ArticleId" class="@item.Avatar"> </a>
+                        <div class="discovery-desc">
+                            <p>@item.Title</p>
+                            <div>
+                                @item.Decs
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <div class="bb"></div>
+    @await Component.InvokeAsync("Interested")
+</div>
+<!-- End: Content -->

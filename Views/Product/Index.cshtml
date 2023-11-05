@@ -1,0 +1,870 @@
+﻿@model List<Product>
+<div class="container">
+    <div class="title-project mt-gallery">
+        <h2>TẤT CẢ DỰ ÁN</h2>
+    </div>
+    <div class="row hide hide-ipad" id="hide-mobile">
+        <!--  -->
+        <div class="col-3">
+            <div class="filter">
+                <div class="title-filter">
+                    Lọc Sản Phẩm
+                </div>
+            </div>
+            <div class="lstcheckbox">
+                <form action="">
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Danh mục
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Bàn phím</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Công thái học</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Life style</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Nhiếp ảnh</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Phụ kiện</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Trạng thái
+                        </div>
+
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Sắp diễn ra</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Đang chạy</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Đã bán</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Thương hiệu
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Belkin</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Billy</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>ChargeAsap</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Epione</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Keychron</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Lumina</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>MelGeek</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>MOFT</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Nanoleaf</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-submit">
+                        <input type="submit" value="LỌC SẢN PHẨM">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="col-9">
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-4">
+                        <div class="wrap item-project-page">
+                            <div class="zoom-hover">
+                                <img src="@item.Avatar" class="item-project" alt="" />
+                                <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                            </div>
+                            <div class="status @item.Condition">@item.Condition</div>
+                            <div class="desc-item">
+                                <div class="date-project">
+                                    <span class="num">@item.DayProject</span>
+                                    <span class="txt">ngày</span>
+                                </div>
+                                <h3>@item.Title</h3>
+                                <p>
+                                    @item.Decs
+                                </p>
+                                <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- responsive ipad -->
+    <div class="row show-ipad" id="hide-mobile">
+        <!--  -->
+        <div class="col-4">
+            <div class="filter">
+                <div class="title-filter">
+                    Lọc Sản Phẩm
+                </div>
+            </div>
+            <div class="lstcheckbox">
+                <form action="">
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Danh mục
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Bàn phím</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Công thái học</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Life style</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Nhiếp ảnh</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Phụ kiện</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Trạng thái
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Sắp diễn ra</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Đang chạy</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Đã bán</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="box-fill pb-2">
+                        <div class="title-fill">
+                            Thương hiệu
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Belkin</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Billy</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>ChargeAsap</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Epione</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Keychron</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Lumina</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>MelGeek</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>MOFT</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-check">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-success">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Nanoleaf</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-submit">
+                        <input type="submit" value="LỌC SẢN PHẨM">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+        <div class="col-66">
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-6">
+                        <div class="wrap item-project-page width-330">
+                            <div class="zoom-hover">
+                                <img src="@item.Avatar" class="item-project" alt="" />
+                                <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                            </div>
+                            <div class="status @item.Condition">@item.Condition</div>
+                            <div class="desc-item">
+                                <div class="date-project">
+                                    <span class="num">@item.DayProject</span>
+                                    <span class="txt">ngày</span>
+                                </div>
+                                <h3>@item.Title</h3>
+                                <p>
+                                    @item.Decs
+                                </p>
+                                <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- responsive tablet -->
+    <div class="row show-flex hide-ipad" id="hide-mobile">
+        <!--  -->
+        <!-- <div class="col-3">
+          <div class="filter">
+            <div class="title-filter">
+              Lọc Sản Phẩm
+            </div>
+          </div>
+          <div class="lstcheckbox">
+            <form action="">
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Danh mục
+                </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Bàn phím</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Công thái học</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Life style</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Nhiếp ảnh</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Phụ kiện</label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Trạng thái
+                </div>
+
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Sắp diễn ra</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Đang chạy</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Đã bán</label>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Thương hiệu
+                </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Belkin</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Billy</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>ChargeAsap</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Epione</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Keychron</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Lumina</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>MelGeek</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>MOFT</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Nanoleaf</label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="filter-submit">
+                <input type="submit" value="LỌC SẢN PHẨM">
+              </div>
+            </form>
+          </div>
+        </div> -->
+        <!--  -->
+        <div class="col-12">
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="col-6">
+                        <div class="wrap item-project-page width-370">
+                            <div class="zoom-hover">
+                                <img src="@item.Avatar" class="item-project" alt="" />
+                                <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                            </div>
+                            <div class="status @item.Condition">@item.Condition</div>
+                            <div class="desc-item">
+                                <div class="date-project">
+                                    <span class="num">@item.DayProject</span>
+                                    <span class="txt">ngày</span>
+                                </div>
+                                <h3>@item.Title</h3>
+                                <p>
+                                    @item.Decs
+                                </p>
+                                <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!-- responsive mobile -->
+    <div class="row hide hide-ipad justify-content-center" id="show-mobile-flex">
+        <!--  -->
+        <!-- <div class="col-3">
+          <div class="filter">
+            <div class="title-filter">
+              Lọc Sản Phẩm
+            </div>
+          </div>
+          <div class="lstcheckbox">
+            <form action="">
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Danh mục
+                </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Bàn phím</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Công thái học</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Life style</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Nhiếp ảnh</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Phụ kiện</label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Trạng thái
+                </div>
+
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Sắp diễn ra</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Đang chạy</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Đã bán</label>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="box-fill pb-2">
+                <div class="title-fill">
+                  Thương hiệu
+                </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Belkin</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Billy</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>ChargeAsap</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Epione</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Keychron</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Lumina</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>MelGeek</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>MOFT</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-check">
+                    <div class="pretty p-icon p-smooth">
+                      <input type="checkbox" />
+                      <div class="state p-success">
+                          <i class="icon fa fa-check"></i>
+                          <label>Nanoleaf</label>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="filter-submit">
+                <input type="submit" value="LỌC SẢN PHẨM">
+              </div>
+            </form>
+          </div>
+        </div> -->
+        <!--  -->
+        <div class="col-11">
+            <div class="row pagination-1">
+                @foreach (var item in Model)
+                {
+                    <div class="wrap item-project-page width-300">
+                        <div class="zoom-hover">
+                            <img src="@item.Avatar" class="item-project" alt="" />
+                            <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                        </div>
+                        <div class="status @item.Condition">@item.Condition</div>
+                        <div class="desc-item">
+                            <div class="date-project">
+                                <span class="num">@item.DayProject</span>
+                                <span class="txt">ngày</span>
+                            </div>
+                            <h3>@item.Title</h3>
+                            <p>
+                                @item.Decs
+                            </p>
+                            <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                }
+            </div>
+            <!--  -->
+        </div>  
+    </div>
+    
+
+</div>
+<!-- End: Content -->

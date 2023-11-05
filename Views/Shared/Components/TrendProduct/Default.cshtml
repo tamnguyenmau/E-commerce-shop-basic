@@ -1,0 +1,151 @@
+﻿@model List<Product>
+<!-- carousel project pc -->
+<div class="project hide" id="hide-mobile">
+    <div class="row">
+        <div class="col-5 desc-project">
+            <div class="title-project">
+                <h1 data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="700"
+                    data-aos-once="true">
+                    DỰ ÁN MỚI NHẤT
+                </h1>
+                <p data-aos="fade-up"
+                   data-aos-offset="300"
+                   data-aos-easing="ease-in-out"
+                   data-aos-duration="700"
+                   data-aos-once="true"
+                   data-aos-delay="50">
+                    Tổng hợp những dự án mới nhất từ các Start Up công nghệ. Hãy
+                    là những người đầu tiên sở hữu. Pre - Order ngay!
+                </p>
+            </div>
+        </div>
+        <div class="col-7 item-project">
+            <div id="owl-project" class="owl-carousel owl-theme"
+                 data-aos="fade-left"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="800"
+                 data-aos-delay="300"
+                 data-aos-once="true">
+                @foreach (var item in Model)
+                {
+                    <div class="item">
+                        <!-- stage 1 -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wrap">
+                                    <div class="zoom-hover">
+                                        <img src="@item.Avatar" class="item-project" alt="" />
+                                        <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                                    </div>
+                                    <div class="status @item.Condition">@item.Condition</div>
+                                    <div class="desc-item">
+                                        <div class="date-project">
+                                            <span class="num">@item.DayProject</span>
+                                            <span class="txt">ngày</span>
+                                        </div>
+                                        <h3>@item.Title</h3>
+                                        <p>
+                                            @item.Decs
+                                        </p>
+                                        <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<!--  carousel project tablet-->
+<div class="project show" id="hide-mobile">
+    <div class="row">
+        <div class="col-5 desc-project">
+            <div class="title-project">
+                <h1>DỰ ÁN MỚI NHẤT</h1>
+                <p>
+                    Tổng hợp những dự án mới nhất từ các Start Up công nghệ. Hãy
+                    là những người đầu tiên sở hữu. Pre - Order ngay!
+                </p>
+            </div>
+        </div>
+        <div class="col-7 item-project">
+            <div id="owl-project-tablet" class="owl-carousel owl-theme">
+                @foreach (var item in Model)
+                {
+                    <div class="item">
+                        <!-- stage 1 -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wrap">
+                                    <div class="zoom-hover">
+                                        <img src="@item.Avatar" class="item-project" alt="" />
+                                        <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                                    </div>
+                                    <div class="status @item.Condition">@item.Condition</div>
+                                    <div class="desc-item">
+                                        <div class="date-project">
+                                            <span class="num">@item.DayProject</span>
+                                            <span class="txt">ngày</span>
+                                        </div>
+                                        <h3>@item.Title</h3>
+                                        <p>
+                                            @item.Decs
+                                        </p>
+                                        <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- carousel project mobile -->
+<div class="project show-mobile" id="show-mobile">
+    <div class=" desc-project">
+        <div class="title-project">
+            <h1>DỰ ÁN MỚI NHẤT</h1>
+        </div>
+    </div>
+    <div class=" item-project">
+        <div id="owl-project-mobile" class="owl-carousel owl-theme">
+            @foreach (var item in Model)
+            {
+                <div class="item">
+                    <!-- stage 1 -->
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="wrap">
+                                <div class="zoom-hover">
+                                    <img src="@item.Avatar" class="item-project" alt="" />
+                                    <a href="/product-view=@item.ProductId" class="@item.Avatar"></a>
+                                </div>
+                                <div class="status @item.Condition">@item.Condition</div>
+                                <div class="desc-item">
+                                    <div class="date-project">
+                                        <span class="num">@item.DayProject</span>
+                                        <span class="txt">ngày</span>
+                                    </div>
+                                    <h3>@item.Title</h3>
+                                    <p>
+                                        @item.Decs
+                                    </p>
+                                    <a href="/product-view=@item.ProductId" class="link-project">XEM CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>

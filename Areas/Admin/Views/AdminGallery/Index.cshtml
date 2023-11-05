@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+@model List<Gallery>
+<!-- Thanh điều hướng -->
+<nav aria-label="breadcrumb" class="mt-4">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Bàn Làm Việc</a></li>
+        <li class="breadcrumb-item"><a href="#">Danh mục hình ảnh</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Hình ảnh</li>
+    </ol>
+</nav>
+<!-- Nội dung chính -->
+<section class="category-page">
+    <div class="row">
+        <div class="col-12 right">
+            <header>
+                <i class="fa fa-folder icon"></i>
+                <h4>Danh Sách Hình Ảnh</h4>
+                <a class="btn add-btn" asp-route="AdminGalleriesDetail">
+                    <i class="fa fa-plus-circle"></i>
+                </a>
+                <div class="clearfix"></div>
+            </header>
+            <content>
+                <div class="accordion" id="accordion-main">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    <i class="fa fa-caret-right"></i>
+                                    Thông tin cơ bản
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion-main">
+                            <div class="card-body">
+                                <div class="card-columns">
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="card ">
+                                            <img class="img-fluid" src="@item.Avatar" />
+                                            <a class="close" asp-route="AdminGalleriesDelete" asp-route-id="@item.GalleryId">
+                                                <i class="fa fa-times-circle"></i>
+                                            </a>
+                                        </div>  
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </content>
+        </div>
+    </div>
+</section>
+
+

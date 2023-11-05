@@ -1,0 +1,79 @@
+﻿@model List<Gallery>
+
+<!-- gallery pc -->
+<div class="gallery hide" id="hide-mobile">
+    <div class="title-project pb-3"
+         data-aos="fade-up"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true"
+         data-aos-duration="700">
+        <h1>Gallery</h1>
+
+    </div>
+    <!-- first floor -->
+    <div class="row pb-4"
+         data-aos="fade-left"
+         data-aos-duration="700"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true"
+         data-aos-delay="200">
+         @foreach (var item in Model)
+        {
+        <div class="col-4 box">
+            <div class="zoom-hover pt-4">
+                <a data-fancybox="gallery" data-src="@item.Avatar">
+                    <img src="@item.Avatar" alt="" />
+                </a>
+            </div>
+        </div>
+        }
+    </div>
+    <!-- second floor -->
+   
+    <div class="link-gallery py-5">
+        <a asp-route="GalleryList=">XEM THÊM</a>
+    </div>
+</div>
+<!-- gallery tablet -->
+<div class="gallery show" id="hide-mobile">
+    <div class="title-project pb-3">
+        <h1>Gallery</h1>
+    </div>
+    <!-- first floor -->
+    <div class="row pb-4">
+        @foreach (var item in Model)
+        {
+        <div class="col-6 box">
+            <div class="zoom-hover pt-3">
+                <a data-fancybox="gallery" data-src="@item.Avatar">
+                        <img src="@item.Avatar" alt="" />
+                </a>
+            </div>
+        </div>            
+        }
+    </div>
+
+    <div class="link-gallery py-5">
+        <a asp-route="GalleryList=">XEM THÊM</a>
+    </div>
+</div>
+<!-- gallery mobile -->
+<div class="gallery show" id="show-mobile">
+    <div class="title-project pb-3">
+        <h1>Gallery</h1>
+    </div>
+    @foreach (var item in Model)
+    {
+    <div class="box pt-3">
+        <div class="zoom-hover">
+                <a data-fancybox="gallery" data-src="@item.Avatar">
+                    <img src="@item.Avatar" alt="" />
+            </a>
+        </div>
+    </div>
+    }
+    <div class="link-gallery py-5">
+        <a asp-route="GalleryList=">XEM THÊM</a>
+    </div>
+</div>

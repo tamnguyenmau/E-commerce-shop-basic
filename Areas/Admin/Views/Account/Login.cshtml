@@ -1,0 +1,78 @@
+﻿
+@{
+    Layout = null;
+}
+
+@model Account
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập hệ thống</title>
+    <link href="/AdminAssets/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/AdminAssets/Content/font-awesome.css" rel="stylesheet" />
+    <link href="/AdminAssets/Content/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/AdminAssets/Content//hover-min.css">
+    <link rel="icon" type="image/x-icon" href="/adminassets/favicon.ico.png">
+
+</head>
+<body>
+    <div class="container">
+        <section class="login-form-box">
+            <form asp-route="AdminLogin" class="login-form">
+                <div class="bg p-1">
+                    <h1 class="text-center">Đăng nhập hệ thống</h1>
+                    <div class="form-group">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <input asp-for="Username" type="text" class="form-control input-username" placeholder="Enter Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </div>
+                            <input asp-for="Password" type="password" class="form-control input-password" placeholder="Enter Password">
+                        </div>
+                    </div>
+                    <div class="form-group text-right">
+                        <div class="custom-control custom-checkbox d-inline-block">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label" for="customControlAutosizing">Lưu mật khẩu trên máy này</label>
+                        </div>
+                        <button class="hvr-float-shadow btn btn-info a-login-btn mx-2" type="submit">Đăng nhập</button>
+                    </div>
+                    <div class="form-group">
+                        <div class="alert @ViewBag.LoginClass alert-dismissible fade show div-alert" role="alert">
+                            <span class="message">@ViewBag.LoginMessage</span>
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <section id="script">
+        <script src="/AdminAssets/Scripts/bootstrap.bundle.js"></script>
+        <script src="/AdminAssets/Scripts/jquery-3.0.0.js"></script>
+        <script src="/AdminAssets/Scripts/bootstrap.js"></script>
+        <script src="/AdminAssets/Scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="/AdminAssets/Scripts/jquery.nicescroll.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="/AdminAssets/Scripts/owl.carousel.js"></script>
+        <script src="/AdminAssets/Scripts/script.js"></script>
+    </section>
+</body>
+</html>

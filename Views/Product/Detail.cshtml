@@ -1,0 +1,585 @@
+﻿@model Product
+
+<div class="container mt-gallery pb-5">
+    <div class="title-project pb-3">
+        <h2>VỀ DỰ ÁN</h2>
+    </div>
+    <!-- gallery PC -->
+    <div class="project-info-wrapper hide">
+        <div class="row">
+            <div class="col-7">
+                <div class="product-grp">
+                    <div class="img-big">
+                        <a href="@Model.Avatar" data-fancybox="gallery">
+                            <img src="@Model.Avatar" id="expandedImg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="desc-project-title">
+                    <div class="pj-link">
+                        <ul>
+                            <li>
+                                <a href="#" class="bg-dark-blue">@Model.Condition</a>
+                            </li>
+                            <li>
+                                <a href="#" class="bg-light-gray">@Model.DetailInfo</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pj-name">
+                        <h2>@Model.Title</h2>
+                    </div>
+                    <div class="pj-decs">
+                        @Model.Decs
+                    </div>
+                    <div class="pj-address">
+                        <div class="img">
+                            <img src="~/assets/img/item project/Epionelab - Logo-02.png" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="t1">
+                                Epione
+                            </div>
+                            <div class="t2">
+                                13 Campaigns |
+                                Viet Nam
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pj-day">
+                        <div class="name">Kết thúc trong:</div>
+                        <div class="date-project">
+                            <span class="num">28</span>
+                            <span class="txt">ngày</span>
+                        </div>
+                    </div>
+                    <div class="pj-share-order">
+                        <a href="#" class="viewall mt-3">PRE-ORDER</a>
+                        <a href="#" class="share mt-3">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- gallery Mobile -->
+    <div class="project-info-wrapper show">
+        <div class="product-grp pb-2">
+            <div class="img-big">
+                <a href="@Model.Avatar" data-fancybox="gallery">
+                    <img src="@Model.Avatar" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="desc-project-title px-3">
+            <div class="pj-link">
+                <ul>
+                    <li>
+                        <a href="#" class="bg-dark-blue">@Model.Condition</a>
+                    </li>
+                    <li>
+                        <a href="#" class="bg-light-gray">@Model.DetailInfo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pj-name">
+                <h2>@Model.Title</h2>
+            </div>
+            <div class="pj-decs">
+               @Model.Decs
+            </div>
+            <div class="pj-address">
+                <div class="img">
+                    <img src="~/assets/img/item project/Epionelab - Logo-02.png" alt="">
+                </div>
+                <div class="txt">
+                    <div class="t1">
+                        Epione
+                    </div>
+                    <div class="t2">
+                        13 Campaigns |
+                        Viet Nam
+                    </div>
+                </div>
+            </div>
+            <div class="pj-day">
+                <div class="name">Kết thúc trong:</div>
+                <div class="date-project">
+                    <span class="num">28</span>
+                    <span class="txt">ngày</span>
+                </div>
+            </div>
+            <div class="pj-share-order">
+                <a href="#" class="viewall mt-3">PRE-ORDER</a>
+                <a href="#" class="share mt-3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bb"></div>
+<div class="container pt-5">
+    <!-- pc -->
+    <div class="row hide" id="hide-mobile">
+        <div class="col-66">
+            <div class="project-sidebar">
+                <div class="sidebar">
+                    <ul>
+                        <li><a class="under-line insite-out active-text" href="#">Dự Án</a></li>
+                        <li><a class="under-line insite-out active-text" href="#">Cập Nhật</a></li>
+                        <li><a class="under-line insite-out active-text" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="conttabpro">
+                <div class="pjtab1">
+                    @Html.Raw(Model.Content)
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="lst-item-preorder">
+                <div class="item-preorder">
+                    <div class="thumd">
+                        <a href="#">
+                            <img src="~/assets/img/item project/Thumbnail-white.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decs">
+                        <div class="ddtitle">
+                            <h3>
+                                <a href="#">Combo SmartDesk Lite + RightArm</a>
+                            </h3>
+                        </div>
+                        <div class="ddtend">
+                            Tặng arm Epione RightArm trị giá 890.000 đồng
+                        </div>
+                        <div class="ddprice">
+                            <div class="grippric">
+                                <span>6,190,000 VNĐ</span>
+                                <div class="pricegg">
+                                    (11%OFF)
+                                </div>
+                            </div>
+                            <div class="pricen">
+                                5,500,000 VNĐ
+                            </div>
+                        </div>
+                        <div class="ddpay">
+                            <div class="time">
+                                <div class="t1">
+                                    Dự kiến giao hàng
+                                </div>
+                                <div class="t2">
+                                    Tháng
+                                    03, năm
+                                    2023
+                                </div>
+                            </div>
+                            <div class="view">
+                                <a href="#">PRE-ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-preorder">
+                    <div class="thumd">
+                        <a href="#">
+                            <img src="~/assets/img/item project/9fc549ed851318132ac9abfe558f3ee4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decs">
+                        <div class="ddtitle">
+                            <h3>
+                                <a href="#">Combo SmartDesk Pro + RightArm</a>
+                            </h3>
+                        </div>
+                        <div class="ddtend">
+                            Tặng arm Epione RightArm trị giá 890.000 đồng
+                        </div>
+                        <div class="ddprice">
+                            <div class="grippric">
+                                <span>
+                                    9,380,000
+                                    VNĐ
+                                </span>
+                                <div class="pricegg">
+                                    (7%OFF)
+                                </div>
+                            </div>
+                            <div class="pricen">
+                                8,690,000
+                                VNĐ
+                            </div>
+                        </div>
+                        <div class="ddpay">
+                            <div class="time">
+                                <div class="t1">
+                                    Dự kiến giao hàng
+                                </div>
+                                <div class="t2">
+                                    Tháng
+                                    03, năm
+                                    2023
+                                </div>
+                            </div>
+                            <div class="view">
+                                <a href="#">PRE-ORDER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tablet -->
+    <div class="row show p-2" id="hide-mobile">
+        <div class="lst-item-preorder owl-carousel owl-theme" id="owl-item-project-tablet">
+            <div class="item">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/Thumbnail-white.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Lite + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>6,190,000 VNĐ</span>
+                                        <div class="pricegg">
+                                            (11%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        5,500,000 VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/9fc549ed851318132ac9abfe558f3ee4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Pro + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>
+                                            9,380,000
+                                            VNĐ
+                                        </span>
+                                        <div class="pricegg">
+                                            (7%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        8,690,000
+                                        VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/9fc549ed851318132ac9abfe558f3ee4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Pro + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>
+                                            9,380,000
+                                            VNĐ
+                                        </span>
+                                        <div class="pricegg">
+                                            (7%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        8,690,000
+                                        VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/Thumbnail-white.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Lite + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>6,190,000 VNĐ</span>
+                                        <div class="pricegg">
+                                            (11%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        5,500,000 VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-sidebar">
+            <div class="sidebar">
+                <ul>
+                    <li><a class="under-line insite-out active-text" href="#">Dự Án</a></li>
+                    <li><a class="under-line insite-out active-text" href="#">Cập Nhật</a></li>
+                    <li><a class="under-line insite-out active-text" href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conttabpro">
+            <div class="pjtab1">
+                @Html.Raw(Model.Content)
+            </div>
+        </div>
+    </div>
+    <!-- mobile -->
+    <div class="row show p-2" id="show-mobile">
+        <div class="lst-item-preorder owl-carousel owl-theme" id="owl-item-project-mobile">
+            <div class="item">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/Thumbnail-white.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Lite + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>6,190,000 VNĐ</span>
+                                        <div class="pricegg">
+                                            (11%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        5,500,000 VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="item-preorder">
+                            <div class="thumd">
+                                <a href="#">
+                                    <img src="~/assets/img/item project/9fc549ed851318132ac9abfe558f3ee4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="decs">
+                                <div class="ddtitle">
+                                    <h3>
+                                        <a href="#">Combo SmartDesk Pro + RightArm</a>
+                                    </h3>
+                                </div>
+                                <div class="ddtend">
+                                    Tặng arm Epione RightArm trị giá 890.000 đồng
+                                </div>
+                                <div class="ddprice">
+                                    <div class="grippric">
+                                        <span>
+                                            9,380,000
+                                            VNĐ
+                                        </span>
+                                        <div class="pricegg">
+                                            (7%OFF)
+                                        </div>
+                                    </div>
+                                    <div class="pricen">
+                                        8,690,000
+                                        VNĐ
+                                    </div>
+                                </div>
+                                <div class="ddpay">
+                                    <div class="time">
+                                        <div class="t1">
+                                            Dự kiến giao hàng
+                                        </div>
+                                        <div class="t2">
+                                            Tháng
+                                            03, năm
+                                            2023
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <a href="#">PRE-ORDER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="project-sidebar">
+            <div class="sidebar">
+                <ul>
+                    <li><a class="under-line insite-out active-text" href="#">Dự Án</a></li>
+                    <li><a class="under-line insite-out active-text" href="#">Cập Nhật</a></li>
+                    <li><a class="under-line insite-out active-text" href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="conttabpro">
+            <div class="pjtab1">
+                @Html.Raw(Model.Content)
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bb"></div>
+@await Component.InvokeAsync("Interested")
+<!-- End: Content -->

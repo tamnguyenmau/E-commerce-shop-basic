@@ -1,0 +1,60 @@
+﻿@model List<Article>
+<div class="discovery" id="hide-mobile">
+    <div class="title-project pb-3"
+         data-aos="fade-up"
+         data-aos-offset="100"
+         data-aos-once="true"
+         data-aos-duration="700">
+        <h1>Khám phá</h1>
+    </div>
+    <div class="row pb-4"
+         data-aos="fade"
+         data-aos-duration="700"
+         data-aos-easing="ease-in-out"
+         data-aos-once="true"
+         data-aos-delay="200">
+        @foreach (var item in Model)
+        {
+            <div class="@item.Size pb-4">
+                <div class="wrap">
+                    <div class="thumb">
+                        <i class="fa-regular fa-angle-right"></i>
+                    </div>
+                    <img src="@item.Avatar" class="img-article" alt="" />
+                    <a href="/article-view/@item.ArticleId" class="@item.Avatar"> 
+                    <div class="discovery-desc">
+                        <p>@item.Title</p>
+                        <div>
+                            @item.Decs
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<!-- discovery mobile -->
+<div class="discovery" id="show-mobile">
+    <div class="title-project pb-3">
+        <h1>Khám phá</h1>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="wrap mb-4">
+            <div class="thumb">
+                <i class="fa-regular fa-angle-right"></i>
+            </div>
+            <img src="@item.Avatar" class="img-article" alt="" />
+            <a href="/article-view/@item.ArticleId" class="@item.Avatar"> </a>
+            <div class="discovery-desc">
+                <p>@item.Title</p>
+                <div>
+                    @item.Decs
+                </div>
+            </div>
+        </div>
+
+    }
+   
+</div>
